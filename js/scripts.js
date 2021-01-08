@@ -19,4 +19,4 @@ generateMadlib.addEventListener('submit', function (event) {
             subjectResponse.innerHTML = inputItem.value;
         }
     });
-})
+});
