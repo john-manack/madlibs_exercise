@@ -1,16 +1,22 @@
 'use strict';
 
-console.log('Scripts Loaded');
+console.log('Sweet sweet JS Loaded');
 
 const generateMadlib = document.querySelector('#generateMadlib');
 
 generateMadlib.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const inputSelectors = document.querySelectorAll('input')
+    const inputSelectors = document.querySelectorAll('input');
+    const nameResponse = document.querySelector('#nameResponse');
+    const subjectResponse = document.querySelector('#subjectResponse');
 
     inputSelectors.forEach(function (inputItem) {
-        console.log("What is the input item:", inputItem)
-    })
-
+        if (inputItem.name === 'myName') {
+            nameResponse.innerHTML = inputItem.value;
+        }
+        if (inputItem.name === 'mySubject') {
+            subjectResponse.innerHTML = inputItem.value;
+        }
+    });
 })
