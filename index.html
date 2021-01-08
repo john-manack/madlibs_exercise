@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlib v1 - John</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body></body>
+    <header>
+        <div class="wrapper">
+            <h1>Madlibs!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                    <!-- Sean Notes:-->
+                    <!-- I prefer wrapping labels around the input. -->
+                    <!-- However, either way is valid.-->
+                <form id="generateMadlib" action="#" method="POST">
+                    <label>
+                        My name:
+                        <input type="text" name="myName" #id="myName" placeholder="What is your name?" />
+                    </label>
+                    <label>My Favorite Subject:</label>
+                    <input type="text" name="mySubject" id="mySUbject" placeholder="What is your favorite subject?" />
+                    <button type="submit">Generate Madlib</button>
+                </form>
+            </section>
+            <section>
+                <p>My name is <span id="nameResponse" class="madlib_placeholder"></span> and my favorite subject is <span id="subjectResponse" class="madlib_placeholder"></span>.</p>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="js/scripts.js"></script>
+</html>
